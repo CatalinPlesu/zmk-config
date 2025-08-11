@@ -234,10 +234,10 @@
 
         settings {
             bindings = <
-&bt BT_CLR  &bt BT_CLR_ALL  &trans        &trans  &bootloader    &bootloader  &trans  &trans  &trans  &trans
-&bt BT_PRV  &bt BT_NXT      &bt BT_SEL 0  &trans  &trans         &trans       &trans  &trans  &trans  &trans
-&trans      &trans          &trans        &trans  &trans         &trans       &trans  &trans  &trans  &trans
-                                          &tog 4  &trans         &trans       &tog 4
+&bt BT_CLR  &bt BT_CLR_ALL  &trans        &trans  &bootloader       &bootloader  &trans  &trans  &trans  &trans
+&bt BT_PRV  &bt BT_NXT      &bt BT_SEL 0  &trans  &trans            &trans       &trans  &trans  &trans  &trans
+&trans      &trans          &trans        &trans  &studio_unlock    &trans       &trans  &trans  &trans  &trans
+                                          &tog 4  &trans            &trans       &tog 4
             >;
         };
     };
