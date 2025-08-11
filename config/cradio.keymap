@@ -191,6 +191,11 @@
             require-prior-idle-ms = <25>;
             layers = <0>;
         };
+
+        window_management {
+            bindings = <&mo 5>;
+            key-positions = <31 30>;
+        };
     };
 
     keymap {
@@ -238,6 +243,15 @@
 &bt BT_PRV  &bt BT_NXT      &bt BT_SEL 0  &trans  &trans            &trans       &trans  &trans  &trans  &trans
 &trans      &trans          &trans        &trans  &studio_unlock    &trans       &trans  &trans  &trans  &trans
                                           &tog 4  &trans            &trans       &tog 4
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&kp LG(NUMBER_1)  &kp LG(N2)    &kp LG(N3)       &kp LG(N4)     &kp LG(N5)    &trans  &trans  &trans  &trans  &trans
+&kp LA(TAB)       &kp LC(TAB)   &kp LSHFT        &kp LGUI       &kp LG(D)     &trans  &trans  &trans  &trans  &trans
+&kp LG(Q)         &kp LG(LEFT)  &kp LG(PAGE_UP)  &kp LG(RIGHT)  &trans        &trans  &trans  &trans  &trans  &trans
+                                                 &trans         &trans        &trans  &trans
             >;
         };
     };
