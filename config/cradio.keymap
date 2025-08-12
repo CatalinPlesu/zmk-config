@@ -190,6 +190,12 @@
             bindings = <&mo 5>;
             key-positions = <31 30>;
         };
+
+        mouse_middle_click {
+            bindings = <&mkp MCLK>;
+            key-positions = <12 11>;
+            layers = <6>;
+        };
     };
 
     keymap {
@@ -240,12 +246,21 @@
             >;
         };
 
-        layer_6 {
+        window_management {
             bindings = <
 &kp LG(NUMBER_1)  &kp LG(N2)    &kp LG(N3)       &kp LG(N4)     &kp LG(N5)    &trans  &trans  &trans  &trans  &trans
 &kp LA(TAB)       &kp LC(TAB)   &kp LSHFT        &kp LGUI       &kp LG(D)     &trans  &trans  &trans  &trans  &trans
 &kp LG(Q)         &kp LG(LEFT)  &kp LG(PAGE_UP)  &kp LG(RIGHT)  &trans        &trans  &trans  &trans  &trans  &trans
                                                  &trans         &trans        &trans  &trans
+            >;
+        };
+
+        mouse {
+            bindings = <
+&trans     &mmv MOVE_X(-100)  &mmv MOVE_X(100)   &trans     &trans    &trans          &trans          &trans        &trans           &trans
+&mkp RCLK  &mmv MOVE_Y(100)   &mmv MOVE_Y(-100)  &mkp LCLK  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&trans     &trans             &trans             &trans     &trans    &trans          &trans          &trans        &trans           &trans
+                                                 &trans     &trans    &trans          &trans
             >;
         };
     };
