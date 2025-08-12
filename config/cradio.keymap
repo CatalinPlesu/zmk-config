@@ -160,16 +160,6 @@
             layers = <0>;
         };
 
-        macros {
-            bindings = <&tog 0>;
-            key-positions = <30 33>;
-        };
-
-        mouse {
-            bindings = <&tog 0>;
-            key-positions = <31 32>;
-        };
-
         r-ctrl-alt {
             bindings = <&kp LC(LEFT_ALT)>;
             key-positions = <16 17 33>;
@@ -188,7 +178,7 @@
 
         window_management {
             bindings = <&mo 5>;
-            key-positions = <31 30>;
+            key-positions = <30 33>;
         };
 
         mouse_middle_click {
@@ -199,7 +189,7 @@
 
         mo_mouse {
             bindings = <&mo 6>;
-            key-positions = <32 33>;
+            key-positions = <32 31>;
         };
     };
 
